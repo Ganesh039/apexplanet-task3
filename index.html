@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Shopping - Carousel & Quiz</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Apex Shopping</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Carousel</a></li>
+          <li><a href="quiz.html">Shopping Quiz</a></li>
+          <li><a href="joke.html">Joke</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section id="carousel">
+    <div class="container">
+      <h2>Our Trending Collections</h2>
+      <div class="carousel-wrapper">
+        <button id="prev" class="carousel-btn">&#10094;</button>
+        <div class="carousel">
+          <img src="J1.jpeg" alt="Product 1" class="carousel-image active">
+          <img src="J2.jpg" alt="Product 2" class="carousel-image">
+          <img src="J3.jpeg" alt="Product 3" class="carousel-image">
+          <img src="J4.jpg" alt="Product 4" class="carousel-image">
+          <img src="j5.jpg" alt="Product 5" class="carousel-image">
+          <img src="j6.jpeg" alt="Product 6" class="carousel-image">
+          <img src="j7.jpg" alt="Product 7" class="carousel-image">
+          <img src="j8.jpg" alt="Product 8" class="carousel-image">
+        </div>
+        <button id="next" class="carousel-btn">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <div class="container">
+      <h2>Shopping Preferences Quiz</h2>
+      <form id="quiz-form">
+        <p>1. What type of products do you shop for most?</p>
+        <label><input type="radio" name="q1" value="Clothing"> Clothing</label>
+        <label><input type="radio" name="q1" value="Electronics"> Electronics</label>
+        <label><input type="radio" name="q1" value="Home Decor"> Home Decor</label>
+        <label><input type="radio" name="q1" value="Beauty Products"> Beauty Products</label>
+
+        <p>2. How often do you shop online?</p>
+        <label><input type="radio" name="q2" value="Daily"> Daily</label>
+        <label><input type="radio" name="q2" value="Weekly"> Weekly</label>
+        <label><input type="radio" name="q2" value="Monthly"> Monthly</label>
+        <label><input type="radio" name="q2" value="Rarely"> Rarely</label>
+
+        <p>3. What influences your shopping decision the most?</p>
+        <label><input type="radio" name="q3" value="Discounts & Offers"> Discounts & Offers</label>
+        <label><input type="radio" name="q3" value="Brand Reputation"> Brand Reputation</label>
+        <label><input type="radio" name="q3" value="Customer Reviews"> Customer Reviews</label>
+        <label><input type="radio" name="q3" value="Fast Delivery"> Fast Delivery</label>
+
+        <p>4. What is your preferred shopping budget?</p>
+        <label><input type="radio" name="q4" value="Under $50"> Under $50</label>
+        <label><input type="radio" name="q4" value="$50 - $200">$50 - $200</label>
+        <label><input type="radio" name="q4" value="$200 - $500">$200 - $500</label>
+        <label><input type="radio" name="q4" value="Above $500"> Above $500</label>
+
+        <p>5. Do you prefer shopping in-store or online?</p>
+        <label><input type="radio" name="q5" value="Online"> Online</label>
+        <label><input type="radio" name="q5" value="In-store"> In-store</label>
+        <label><input type="radio" name="q5" value="Both"> Both</label>
+
+        <button type="button" onclick="submitQuiz()">Submit</button>
+      </form>
+      <p id="quiz-result"></p>
+    </div>
+  </section>
+
+  <section id="joke">
+    <div class="container">
+      <h2>Joke of the Day</h2>
+      <p id="joke-content">Loading a joke...</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Apex Shopping. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
